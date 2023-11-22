@@ -3,7 +3,8 @@
   width: 100vw;
   max-width: 65rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  justify-content: center; 
   align-items: center;
   text-align: center;
   margin: 0 auto;
@@ -32,6 +33,7 @@
 }
 
 .skillBar {
+  color: whitesmoke;
   display: flex;
   margin: 1rem;
   padding: 1.5rem 2rem;
@@ -43,29 +45,32 @@
 .skillBarImg {
   object-fit: cover;
   height: 9rem;
+  width: 9rem;
   min-width: 9rem;
+  min-height: 9rem;
   margin-right: 2rem;
   border-radius: 0.5rem;
-  float:left;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.skillBarText {
+.skillBarText> {
   font-size: 1rem;
   font-weight: 300;
   color: whitesmoke;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex: 1;
 }
-
-.skillBar:hover .skillBarText {
-  color: black;
-}
-/* .skillBarText p:hover {
-  color: black;
-} */
 
 .skillBar:hover {
-  background: white;
+  background: whitesmoke;
   color: black;
+  font-weight: 300;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.skillBar:hover .skillBarText h2 {
+  color: black;
 }
 
 .skillBarText h2 {
@@ -76,16 +81,23 @@
   color: yellow;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:480px) {
   .skillBarText>p {
     font-size: 3vw;
   }
+
+  .skillBar {
+    flex-direction: column;
+  }
+
   .skillBarImg {
     height: 2.25rem;
     width: 2.25rem;
+    margin-right: 1rem;
     float: left;
   }
+
   .skillBarText>h2 {
     font-size: 5vw;
-  }
+  } 
 }

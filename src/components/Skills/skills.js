@@ -20,7 +20,7 @@ const Skills = () => {
                 <div className='skillBarText'>
                     <h2>The Singer</h2>
                     <p>With a melodious voice that resonates with soulful vibes, Kiki's singing has the power to touch hearts and evoke emotions. As a prolific songwriter, Kiki's lyrics are a testament to the power of storytelling, often inspired by personal experiences and universal themes</p>
-                </div>
+                </div> 
             </div>
             <div className='skillBar'>
                 <img src={kiki3} alt='kiki3' className='skillBarImg' />
@@ -53,7 +53,7 @@ const Skills = () => {
             <div className='skillBar'>
                 <img src={kiki9} alt='kiki9' className='skillBarImg' />
                 <div className='skillBarText'>
-                    <h2>The Songwriter</h2>
+                    <h2>The Lyricist</h2>
                     <p>Kiki's lyrical prowess and ability to craft melodies that resonate deeply showcase a rare and exceptional talent in the music industry.</p>
                 </div>
             </div>
