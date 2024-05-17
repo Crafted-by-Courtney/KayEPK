@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import './footer.css'
 
 const Footer = () => {
@@ -12,3 +12,19 @@ const Footer = () => {
 }
 
 export default Footer
+*/
+
+import React from "react";
+import "./footer.css";
+
+const Footer = () => {
+  return (
+    <div>
+      <footer className="footer" role="contentinfo">
+        <span>&copy; 2023 Courtney Cook. All Rights Reserved.</span>
+      </footer>
+    </div>
+  );
+};
+
+export default Footer;
